@@ -1,7 +1,27 @@
 {
   "dependencies": {
     "axios": "1.12.2",
+    "dotenv": "^17.2.2",
     "express": "5.1.0",
     "pug": "3.0.3"
-  }
+  },
+  "name": "victor-alvarado-iwh-i-practicum",
+  "version": "1.0.0",
+  "description": "This repository is for the Integrating With HubSpot I: Foundations course. This practicum is one of two requirements for receiving your Integrating With HubSpot I: Foundations certification. You must also take the exam and receive a passing grade (at least 75%).",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ViDaAH/Victor-Alvarado-iwh-i-practicum.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ViDaAH/Victor-Alvarado-iwh-i-practicum/issues"
+  },
+  "homepage": "https://github.com/ViDaAH/Victor-Alvarado-iwh-i-practicum#readme"
 }

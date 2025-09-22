@@ -1,0 +1,32 @@
+doctype html
+html
+    head
+        title= title
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        link(rel='stylesheet', href='/css/styles.css')
+    body
+        .homepage-container
+            h1 Custom Objects Table
+            
+            a(href="/update-cobj" class="add-link") Add to this table
+            
+            if data && data.length > 0
+                table
+                    thead
+                        tr
+                            th ID
+                            th Hobby Name
+                            th Difficulty Level
+                            th Frecuency
+                    tbody
+                        each item in data
+                            tr
+                                td= item.id
+                                td= item.properties.nombre || 'N/A'
+                                td= item.properties.nivel_experto || 'N/A'
+                                td= item.properties.frecuencia || 'N/A'
+            else
+                .empty-state
+                    p No custom objects found. 
+                        a(href="/update-cobj") Click here to add the first one.

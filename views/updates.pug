@@ -1,0 +1,27 @@
+doctype html
+html
+    head
+        title= title
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        link(rel='stylesheet', href='/css/styles.css')
+    body
+        a(href="/" class="back-link") Return to the homepage
+        
+        .form-container
+            h1 Create New Custom Object
+            
+            form(action="/update-cobj" method="POST")
+                .form-group
+                    label(for="hobby_name") Hobby Name:
+                    input(type="text" id="hobby_name" name="hobby_name" required)
+                
+                .form-group
+                    label(for="difficulty_level") Difficulty Level:
+                    input(type="text" id="difficulty_level" name="difficulty_level" required)
+                
+                .form-group
+                    label(for="time_commitment") Time Commitment (hours per week):
+                    input(type="number" id="time_commitment" name="time_commitment" min="1" max="168" required)
+                
+                button(type="submit") Create Custom Object
